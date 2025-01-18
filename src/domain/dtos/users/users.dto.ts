@@ -20,8 +20,6 @@ export class CreateUserDTO {
 		if (password.length < 8) return ['Email must have at least 8 letters'];
 
 		if (!role) return ['Missing role '];
-		// if (role !== 'Employee' && role !== 'Client')
-		// 	return ['Your role  must be Employee or Client '];
 
 		return [undefined, new CreateUserDTO(name, email, password, role)];
 	}
