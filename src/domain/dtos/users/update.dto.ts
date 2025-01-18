@@ -16,8 +16,8 @@ export class UpdateUserDTO {
 		if (!email) return ['Email is required'];
 		if (email.length < 6) return ['Email must have at least 4 letters'];
 
-		if (!password) return ['Email is required'];
-		if (password.length < 8) return ['Email must have at least 8 letters'];
+		if (!password) return ['Password is required'];
+		if (password.length < 8) return ['Password must have at least 8 letters'];
 
 		if (!role) return ['Missing role '];
 
