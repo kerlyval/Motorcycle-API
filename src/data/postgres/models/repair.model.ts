@@ -21,11 +21,10 @@ export class Repair extends BaseEntity {
 		enum: StatusOfRepair,
 		default: StatusOfRepair.Pending,
 	})
-	status: string;
+	status: StatusOfRepair;
 
 	@Column('varchar', {
-		length: 80,
-		nullable: false,
+		nullable: true,
 	})
 	userId: string;
 }

@@ -5,7 +5,7 @@ export class CreateRepairDTO {
 		const { date, userId } = object;
 
 		if (!date) return ['Missing the date', undefined];
-		if (!userId) return ['Missing the userId'];
+		if (!userId) return ['Missing the userId', undefined];
 
 		// si la ejecucion llega a este punto significa que todo esta bien
 
