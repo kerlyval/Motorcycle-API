@@ -6,7 +6,6 @@ export class CreateRepairDTO {
 
 		if (!date) return ['Missing the date', undefined];
 		if (!userId) return ['Missing the userId'];
-		if (userId.length <= 6) return ['The userId must be at least 6 characters'];
 
 		// si la ejecucion llega a este punto significa que todo esta bien
 
